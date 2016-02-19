@@ -7,7 +7,7 @@ fi
 
 # User specific aliases and functions
 
-export NVM_DIR="/home/keir/.nvm"
+export NVM_DIR="~/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 #Set up node tab completion
