@@ -1,4 +1,4 @@
-export ZSH=/home/keir/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Themes stored in ~/.oh-my-zsh/themes/
 ZSH_THEME="powerlevel9k/powerlevel9k"
