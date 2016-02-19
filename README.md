@@ -5,7 +5,7 @@ These are various config files for tools I use.
 
 For use of the .zshrc, zsh, [Oh My Zsh](http://ohmyz.sh/) and the [Powerlevel9k](https://github.com/bhilburn/powerlevel9k) theme should be installed.
 
-For the .gitconfig [meld](http://meldmerge.org/) is the merge tool.
+For the .gitconfig [meld](http://meldmerge.org/) is the merge tool and gnome-keyring is the credentials helper.
 
 ## Usage
 
