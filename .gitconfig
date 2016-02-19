@@ -1,0 +1,15 @@
+[user]
+	name = Keir Lawson
+	email = keirlawson@gmail.com
+[core]
+	autocrlf = input
+[push]
+	default = simple
+[init]
+	templatedir = ~/.git_templates
+[merge]
+	tool = meld
+[alias]
+	co = checkout
+	br = branch
+  fp = push --force-with-lease
