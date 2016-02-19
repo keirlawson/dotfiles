@@ -3,7 +3,7 @@ These are various config files for tools I use.
 
 ## Requirements
 
-For use of the .zshrc, zsh, oh-my-zsh and the [Powerlevel9k](https://github.com/bhilburn/powerlevel9k) theme should be installed.
+For use of the .zshrc, zsh, [Oh My Zsh](http://ohmyz.sh/) and the [Powerlevel9k](https://github.com/bhilburn/powerlevel9k) theme should be installed.
 
 ## Usage
 
