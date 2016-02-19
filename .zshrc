@@ -26,4 +26,4 @@ alias cat=colorize
 eval "$(grunt --completion=zsh)"
 eval "$(gulp --completion=zsh)"
 
-#PATH variable should be set in .zshenv
+# PATH variable should be set in .zshenv
