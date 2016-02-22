@@ -1,4 +1,2 @@
 '.editor:not(.mini)':
   'shift-f6': 'refactor:rename'
-'atom-workspace':
-  'shift-ctrl-J': 'jira-issue-search:search'
