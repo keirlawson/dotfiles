@@ -42,7 +42,7 @@
     enableBackgroundColor: false
     enableSelectionBorder: true
   "jira-issue-search":
-    jiraSearchUrl: "https://jira.ncredinburgh.com/rest/api/latest/search"
+    jiraSearchUrl: "https://jira.ncredinburgh.com/"
   linter:
     lintOnChange: false
     lintOnChangeInterval: 0
