@@ -28,5 +28,5 @@ eval "$(gulp --completion=zsh)"
 
 # PATH variable should be set in .zshenv
 
-export NVM_DIR="/home/keir/.nvm"
+export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
