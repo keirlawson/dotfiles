@@ -9,9 +9,11 @@
 	templatedir = ~/.git_templates
 [merge]
 	tool = meld
+[diff]
+	compactionHeuristic = true
 [alias]
 	co = checkout
 	br = branch
-  fp = push --force-with-lease
+	fp = push --force-with-lease
 [credential]
 	helper = gnome-keyring
