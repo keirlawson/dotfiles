@@ -17,3 +17,5 @@
 	fp = push --force-with-lease
 [credential]
 	helper = gnome-keyring
+[pull]
+	rebase = true
