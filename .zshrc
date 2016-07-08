@@ -4,7 +4,7 @@ export ZSH=~/.oh-my-zsh
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Plugins stored in ~/.oh-my-zsh/custom/plugins/
-plugins=(git colorize bgnotify)
+plugins=(git colorize bgnotify docker mvn npm)
 
 COMPLETION_WAITING_DOTS="true"
 
@@ -23,7 +23,6 @@ export EDITOR='vim'
 source $ZSH/oh-my-zsh.sh
 
 alias cat=colorize
-eval "$(grunt --completion=zsh)"
 eval "$(gulp --completion=zsh)"
 
 # PATH variable should be set in .zshenv
