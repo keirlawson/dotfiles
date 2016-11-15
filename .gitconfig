@@ -15,7 +15,13 @@
 	co = checkout
 	br = branch
 	fp = push --force-with-lease
+	lg = log --pretty --graph --oneline --decorate
 [credential]
 	helper = gnome-keyring
 [pull]
 	rebase = true
+[git-p4]
+	skipSubmitEdit = true
+	skipSubmitEditCheck = true
+[apply]
+	ignorewhitespace = change
