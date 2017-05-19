@@ -23,9 +23,9 @@ export EDITOR='vim'
 source $ZSH/oh-my-zsh.sh
 
 alias cat=colorize
-eval "$(gulp --completion=zsh)"
+alias mvn=mvn -T 1.0C
+
+# Load machine-specific configuration
+[ -f ~/.zshlocal ] && source ~/.zshlocal
 
 # PATH variable should be set in .zshenv
-
-export NVM_DIR=~/.nvm
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
