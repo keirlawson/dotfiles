@@ -17,6 +17,8 @@
 	br = branch
 	fp = push --force-with-lease
 	lg = log --pretty --graph --oneline --decorate
+	pu = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
+	df = diff --word-diff=color
 [credential]
 	helper = gnome-keyring
 [pull]
