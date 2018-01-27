@@ -28,3 +28,5 @@
 	skipSubmitEditCheck = true
 [apply]
 	ignorewhitespace = change
+[rebase]
+	abbreviateCommands = true
