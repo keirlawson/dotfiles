@@ -33,6 +33,9 @@ alias cat=colorize
 alias mvn='mvn -T 1.0C'
 
 # Load machine-specific configuration
-[ -f ~/.zshlocal ] && source ~/.zshlocal
+if [ -f ~/.zshlocal ]
+then
+  source ~/.zshlocal
+fi
 
 # PATH variable should be set in .zshenv
