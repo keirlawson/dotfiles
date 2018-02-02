@@ -2,3 +2,4 @@
 .sbt/*
 !.atom/*.cson
 !.sbt/0.13/plugins/plugins.sbt
+!.sbt/1.0/plugins/plugins.sbt
