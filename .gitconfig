@@ -30,3 +30,10 @@
 	ignorewhitespace = change
 [rebase]
 	abbreviateCommands = true
+[merge "npm-merge-driver"]
+	name = automatically merge npm lockfiles
+	driver = npx npm-merge-driver merge %A %O %B %P
+[gpg]
+	program = gpg2
+[commit]
+	gpgsign = true
