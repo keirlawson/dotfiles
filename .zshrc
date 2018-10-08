@@ -31,6 +31,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias cat=ccat
 alias mvn='mvn -T 1.0C'
+alias diff='diff -u --color=auto'
 
 # Load machine-specific configuration
 if [ -f ~/.zshlocal ]
