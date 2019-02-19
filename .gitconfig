@@ -23,9 +23,6 @@
 	helper = libsecret
 [pull]
 	rebase = true
-[git-p4]
-	skipSubmitEdit = true
-	skipSubmitEditCheck = true
 [apply]
 	ignorewhitespace = change
 [rebase]
