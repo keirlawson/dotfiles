@@ -1,13 +1,3 @@
 #!/bin/sh
 
-# git prepare-commit-msg hook for automatically prepending an issue key
-# from the start of the current branch name to commit messages.
-
-ticket=$(git symbolic-ref HEAD | awk -F/ 'match($4,/(INS|ins)-[0-9]+/) {print substr($4,RSTART,RLENGTH)}')
-if [ -n "$ticket" ]; then
-    # issue key matched from branch prefix, prepend to commit message
-    TEMP=`mktemp /tmp/commitmsg-XXXXX`
-    (echo "[$ticket]"; tail -n +2 $1) > $TEMP
-    cat $TEMP > $1
-    rm $TEMP
-fi
+echo "[MSHELL-] " >> "$1"
