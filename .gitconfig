@@ -8,8 +8,6 @@
 [core]
 	autocrlf = input
 	editor = hx
-[merge]
-	tool = meld
 [alias]
 	co = checkout
 	cb = "!git checkout $(git branch --sort=-committerdate | sk)"
