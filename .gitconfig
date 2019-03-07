@@ -4,14 +4,10 @@
 [core]
 	autocrlf = input
 	editor = vim
-[push]
-	default = simple
 [init]
 	templatedir = ~/.git_templates
 [merge]
 	tool = meld
-[diff]
-	compactionHeuristic = true
 [alias]
 	co = checkout
 	br = branch
