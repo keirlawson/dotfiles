@@ -8,8 +8,6 @@
 [core]
 	autocrlf = input
 	editor = hx
-[merge]
-	tool = meld
 [alias]
 	co = checkout
 	br = branch --sort=-committerdate
