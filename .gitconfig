@@ -4,8 +4,6 @@
 [core]
 	autocrlf = input
 	editor = vim
-[merge]
-	tool = meld
 [alias]
 	co = checkout
 	br = branch
@@ -13,8 +11,6 @@
 	lg = log --pretty --graph --oneline --decorate
 	pu = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
 	df = diff --word-diff=color
-[credential]
-	helper = libsecret
 [pull]
 	rebase = true
 [apply]
