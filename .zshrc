@@ -4,7 +4,7 @@ export ZSH=~/.oh-my-zsh
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Plugins stored in ~/.oh-my-zsh/custom/plugins/
-plugins=(git bgnotify docker npm sbt zsh-syntax-highlighting vagrant)
+plugins=(git bgnotify docker npm sbt zsh-syntax-highlighting vagrant gradle kubectl)
 
 COMPLETION_WAITING_DOTS="true"
 
