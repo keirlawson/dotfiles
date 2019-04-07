@@ -4,8 +4,6 @@
 [core]
 	autocrlf = input
 	editor = vim
-[init]
-	templatedir = ~/.git_templates
 [merge]
 	tool = meld
 [alias]
