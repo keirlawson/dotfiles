@@ -1,2 +1,0 @@
-'.editor:not(.mini)':
-  'shift-f6': 'refactor:rename'
