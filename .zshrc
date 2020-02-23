@@ -1,27 +1,9 @@
 export ZSH=~/.oh-my-zsh
 
-# Themes stored in ~/.oh-my-zsh/themes/
-ZSH_THEME="powerlevel9k/powerlevel9k"
-
 # Plugins stored in ~/.oh-my-zsh/custom/plugins/
-plugins=(git bgnotify docker npm sbt zsh-syntax-highlighting vagrant gradle kubectl)
+plugins=(git bgnotify docker npm sbt zsh-syntax-highlighting gradle kubectl cargo docker-compose)
 
 COMPLETION_WAITING_DOTS="true"
-
-# Powerlevel9k theme options
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
-POWERLEVEL9K_MODE='awesome-patched'
-POWERLEVEL9K_HOME_ICON=''
-POWERLEVEL9K_VCS_GIT_ICON=''
-POWERLEVEL9K_VCS_GIT_BITBUCKET_ICON=''
-POWERLEVEL9K_VCS_GIT_GITHUB_ICON=''
-POWERLEVEL9K_VCS_GIT_GITLAB_ICON=''
-POWERLEVEL9K_FOLDER_ICON=''
-POWERLEVEL9K_HOME_SUB_ICON=''
-POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='007'
-POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='black'
 
 # User configuration
 export DEFAULT_USER=keir
@@ -37,5 +19,7 @@ if [ -f ~/.zshlocal ]
 then
   source ~/.zshlocal
 fi
+
+eval "$(starship init zsh)"
 
 # PATH variable should be set in .zshenv
