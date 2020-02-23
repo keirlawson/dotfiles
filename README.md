@@ -3,7 +3,7 @@ These are various config files for tools I use.
 
 ## Requirements
 
-For use of the .zshrc, zsh, [Oh My Zsh](http://ohmyz.sh/) and the [Powerlevel9k](https://github.com/bhilburn/powerlevel9k) theme should be installed.
+For use of the .zshrc, zsh, [Oh My Zsh](http://ohmyz.sh/) and the [Starship](https://starship.rs/) prompt should be installed.
 
 For the .gitconfig [meld](http://meldmerge.org/) is the merge tool and `git-credentials-libsecret` is the credentials helper.  `cat` is aliased to `ccat` for syntax highlighting, which can be found [here](https://github.com/jingweno/ccat) and should be installed on the path.
 
