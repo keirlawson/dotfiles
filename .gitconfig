@@ -11,6 +11,7 @@
 	lg = log --pretty --graph --oneline --decorate
 	pu = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
 	df = diff --word-diff=color
+	times = log --pretty=format:'%C(yellow)%h %Cred%ad %Cgreen%d %Creset%s' --date=short
 [pull]
 	rebase = true
 [apply]
