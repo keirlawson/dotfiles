@@ -1,7 +1,7 @@
 export ZSH=~/.oh-my-zsh
 
 # Plugins stored in ~/.oh-my-zsh/custom/plugins/
-plugins=(git bgnotify docker npm sbt zsh-syntax-highlighting gradle kubectl cargo docker-compose)
+plugins=(git docker npm sbt zsh-syntax-highlighting gradle kubectl rust docker-compose)
 
 COMPLETION_WAITING_DOTS="true"
 
@@ -21,5 +21,7 @@ then
 fi
 
 eval "$(starship init zsh)"
+
+compinit
 
 # PATH variable should be set in .zshenv
