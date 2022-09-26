@@ -16,4 +16,4 @@ pavucontrol
 sbt
 vim
 zsh
-rg
+ripgrep
