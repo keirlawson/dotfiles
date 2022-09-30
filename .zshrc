@@ -1,7 +1,7 @@
 export ZSH=~/.oh-my-zsh
 
 # Plugins stored in ~/.oh-my-zsh/custom/plugins/
-plugins=(git docker npm sbt zsh-syntax-highlighting gradle kubectl rust docker-compose)
+plugins=(git docker npm sbt zsh-syntax-highlighting gradle kubectl rust docker-compose yarn)
 
 COMPLETION_WAITING_DOTS="true"
 

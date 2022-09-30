@@ -1,6 +1,10 @@
 [user]
 	name = Keir Lawson
 	email = keirlawson@gmail.com
+
+[includeIf "hasconfig:remote.*.url:**ovotech/**"]
+	path = .gitconfig.work
+
 [core]
 	autocrlf = input
 	editor = vim
