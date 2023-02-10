@@ -1,6 +1,6 @@
 .idea/
 .bloop/
 .metals/
-project/**/metals.sbt
+**/project/**/metals.sbt
 .vscode/
 .bsp/
