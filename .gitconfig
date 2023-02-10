@@ -7,7 +7,7 @@
 
 [core]
 	autocrlf = input
-	editor = vim
+	editor = hx
 [merge]
 	tool = meld
 [alias]
