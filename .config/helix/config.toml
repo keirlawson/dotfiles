@@ -1,0 +1,5 @@
+theme = "spacebones_light"
+
+[editor.file-picker]
+hidden = false
+

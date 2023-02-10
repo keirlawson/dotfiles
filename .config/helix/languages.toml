@@ -1,0 +1,9 @@
+[[language]]
+name = "markdown"
+language-server = { command = "/home/keir/Software/ltex-ls-15.2.0/bin/ltex-ls" }
+config = { ltex = { language = "en-GB" } }
+file-types = ["md"]
+scope = "source.markdown"
+roots = []
+formatter = { command = 'prettier', args = ["--parser", "markdown"] }
+auto-format = true
