@@ -1,7 +1,7 @@
 export ZSH=~/.oh-my-zsh
 
 # Plugins stored in ~/.oh-my-zsh/custom/plugins/
-plugins=(git docker npm sbt zsh-syntax-highlighting gradle kubectl rust docker-compose yarn)
+plugins=(git docker npm sbt zsh-syntax-highlighting gradle kubectl rust docker-compose yarn nix-shell)
 
 COMPLETION_WAITING_DOTS="true"
 
@@ -12,7 +12,7 @@ export DFT_BACKGROUND=light
 
 source $ZSH/oh-my-zsh.sh
 
-alias cat=ccat
+alias cat=bat
 alias diff='diff -u --color=auto'
 
 # Load machine-specific configuration
