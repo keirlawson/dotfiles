@@ -23,7 +23,4 @@ fi
 
 eval "$(starship init zsh)"
 
-autoload bashcompinit && bashcompinit
-autoload -Uz compinit && compinit
-
 # PATH variable should be set in .zshenv
