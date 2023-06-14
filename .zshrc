@@ -7,7 +7,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # User configuration
 export DEFAULT_USER=keir
-export EDITOR='vim'
+export EDITOR='hx'
 export DFT_BACKGROUND=light
 
 source $ZSH/oh-my-zsh.sh
