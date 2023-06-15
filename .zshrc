@@ -9,6 +9,7 @@ COMPLETION_WAITING_DOTS="true"
 export DEFAULT_USER=keir
 export EDITOR='hx'
 export DFT_BACKGROUND=light
+export SBT_TPOLECAT_DEV=true
 
 source $ZSH/oh-my-zsh.sh
 
