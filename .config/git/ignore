@@ -4,3 +4,4 @@
 **/project/**/metals.sbt
 .vscode/
 .bsp/
+.helix/
