@@ -9,5 +9,6 @@
     "explorer.confirmDragAndDrop": false,
     "git.openRepositoryInParentFolders": "never",
     "editor.inlineSuggest.enabled": true,
-    "update.showReleaseNotes": false
+    "update.showReleaseNotes": false,
+    "update.mode": "none"
 }
