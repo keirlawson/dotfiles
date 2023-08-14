@@ -1,0 +1,13 @@
+{
+    "metals.enableSemanticHighlighting": true,
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "redhat.telemetry.enabled": true,
+    "explorer.confirmDragAndDrop": false,
+    "git.openRepositoryInParentFolders": "never",
+    "editor.inlineSuggest.enabled": true,
+    "update.showReleaseNotes": false
+}
