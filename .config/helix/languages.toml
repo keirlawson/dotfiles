@@ -7,3 +7,15 @@ scope = "source.markdown"
 roots = []
 formatter = { command = 'prettier', args = ["--parser", "markdown"] }
 auto-format = true
+
+[[language]]
+name = "git-commit"
+scope = "git.commitmsg"
+roots = []
+file-types = ["COMMIT_EDITMSG"]
+comment-token = "#"
+indent = { tab-width = 2, unit = "  " }
+rulers = [51, 73]
+text-width = 72
+language-server = { command = "/home/keir/Software/ltex-ls-15.2.0/bin/ltex-ls" }
+config = { ltex = { language = "en-GB" } }
