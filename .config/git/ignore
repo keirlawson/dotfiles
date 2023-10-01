@@ -6,3 +6,5 @@
 .bsp/
 .helix/
 store/
+.envrc
+.direnv/

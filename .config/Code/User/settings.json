@@ -10,5 +10,8 @@
     "git.openRepositoryInParentFolders": "never",
     "editor.inlineSuggest.enabled": true,
     "update.showReleaseNotes": false,
-    "update.mode": "none"
+    "update.mode": "none",
+    "git.optimisticUpdate": false,
+    "workbench.startupEditor": "none",
+    "extensions.ignoreRecommendations": true
 }
