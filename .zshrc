@@ -16,6 +16,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias cat=bat
 alias diff='diff -u --color=auto'
+alias code='code --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations'
 
 # Load machine-specific configuration
 if [ -f ~/.zshlocal ]
