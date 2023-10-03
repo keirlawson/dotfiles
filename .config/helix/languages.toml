@@ -17,5 +17,5 @@ comment-token = "#"
 indent = { tab-width = 2, unit = "  " }
 rulers = [51, 73]
 text-width = 72
-language-server = { command = "/home/keir/Software/ltex-ls-15.2.0/bin/ltex-ls" }
+language-server = { command = "ltex-ls" }
 config = { ltex = { language = "en-GB" } }
