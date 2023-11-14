@@ -11,6 +11,7 @@ export EDITOR='hx'
 export DFT_BACKGROUND=light
 export SBT_TPOLECAT_DEV=true
 export NIXPKGS_ALLOW_UNFREE=1
+export ZSH_AUTOSUGGEST_STRATEGY=completion
 
 source $ZSH/oh-my-zsh.sh
 
