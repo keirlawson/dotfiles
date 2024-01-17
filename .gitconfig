@@ -2,7 +2,7 @@
 	name = Keir Lawson
 	email = keirlawson@gmail.com
 
-[includeIf "hasconfig:remote.*.url:**ovotech/**"]
+[includeIf "hasconfig:remote.*.url:https://ghe.siriusxm.com/**"]
 	path = .gitconfig.work
 
 [core]
