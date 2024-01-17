@@ -12,11 +12,19 @@ export DFT_BACKGROUND=light
 export SBT_TPOLECAT_DEV=true
 export NIXPKGS_ALLOW_UNFREE=1
 export ZSH_AUTOSUGGEST_STRATEGY=completion
+export DOCKER_CONFIG=~/.dotfiles/.docker/
 
 source $ZSH/oh-my-zsh.sh
 
 alias cat=bat
 alias diff='diff -u --color=auto'
+alias mkshell='echo "{ nixpkgs ? import <nixpkgs> {} }:
+with nixpkgs; mkShell {
+  buildInputs = [ ];
+  shellhook = '"'"''"'"'
+  '"'"''"'"';
+}
+" >> shell.nix && echo "use nix" >> .envrc && direnv allow'
 
 # Load machine-specific configuration
 if [ -f ~/.zshlocal ]

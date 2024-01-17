@@ -60,3 +60,14 @@ indent = { tab-width = 2, unit = "  " }
 [[grammar]]
 name = "typst"
 source = { git = "https://github.com/uben0/tree-sitter-typst", rev = "e35aa22395fdde82bbc4b5700c324ce346dfc9e5" }
+
+[[language]]
+name = "nix"
+scope = "source.nix"
+injection-regex = "nix"
+file-types = ["nix"]
+comment-token = "#"
+language-servers = ["nil"]
+indent = { tab-width = 2, unit = "  " }
+auto-format = true
+formatter = { command = "alejandra", args = ["-q"] }
