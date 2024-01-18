@@ -13,5 +13,8 @@
     "update.mode": "none",
     "git.optimisticUpdate": false,
     "workbench.startupEditor": "none",
-    "extensions.ignoreRecommendations": true
+    "extensions.ignoreRecommendations": true,
+    "metals.bloopJvmProperties": [
+      "-Xmx4G"
+    ]
 }
