@@ -13,6 +13,8 @@ export SBT_TPOLECAT_DEV=true
 export NIXPKGS_ALLOW_UNFREE=1
 export ZSH_AUTOSUGGEST_STRATEGY=completion
 export DOCKER_CONFIG=~/.dotfiles/.docker/
+export BAT_THEME=OneHalfLight
+export PATH=$HOME/.cargo/bin:$HOME/.local/share/coursier/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
