@@ -12,7 +12,7 @@
 	tool = meld
 [alias]
 	co = checkout
-	br = branch
+	br = branch --sort=-committerdate
 	fp = push --force-with-lease
 	lg = log --pretty --graph --oneline --decorate
 	pu = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
@@ -43,3 +43,7 @@
         dft = difftool
 [push]
 	autoSetupRemote = true
+[rerere]
+	enabled = true
+[branch]
+	sort = committerdate
