@@ -3,3 +3,6 @@ theme = "spacebones_light"
 [editor.file-picker]
 hidden = false
 
+[keys.normal]
+C-g = ":lsp-workspace-command build-import"
+C-h = ":toggle-option lsp.display-inlay-hints"
