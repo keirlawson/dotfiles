@@ -27,6 +27,12 @@ with nixpkgs; mkShell {
   '"'"''"'"';
 }
 " >> shell.nix && echo "use nix" >> .envrc && direnv allow'
+alias jc='ji "assignee IN (currentUser()) AND statusCategory NOT IN (Done) ORDER BY created DESC" -n NOJIRA | xargs -I {} sh -c '"'"'git commit -e -m "[{}] " && git config branch.$(git branch --show-current).description  "{}: "'"'"''
+alias jp='git branch --edit-description && git config branch.$(git branch --show-current).description | xargs -I {} gh pr create --title "{}" --fill'
+alias jca='git add . && jc'
+alias jpu='git pu && jp'
+alias cm='rm -fr .bsp .bloop project/metals.sbt project/project/metals.sbt .metals'
+alias ghc='gh p && gh pr view --json url,title --jq .title,.url | xargs -d '"'"'\n'"'"' sh -c \\'"'"'echo ":pull-request: $1 - $0"'"'"' | wl-copy'
 
 # Load machine-specific configuration
 if [ -f ~/.zshlocal ]
