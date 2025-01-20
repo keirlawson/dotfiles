@@ -1,2 +1,5 @@
 theme = Tomorrow
 resize-overlay = never
+window-height = 32
+window-width = 130
+font-size = 14
