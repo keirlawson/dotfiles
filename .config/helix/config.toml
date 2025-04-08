@@ -3,6 +3,9 @@ theme = "sbm"#"spacebones_light"
 [editor.file-picker]
 hidden = false
 
+[editor.lsp]
+display-progress-messages = true
+
 [keys.normal]
 C-g = ":lsp-workspace-command build-import"
 C-h = ":toggle-option lsp.display-inlay-hints"

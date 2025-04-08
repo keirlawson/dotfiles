@@ -14,17 +14,6 @@ roots = []
 formatter = { command = 'prettier', args = ["--parser", "markdown"] }
 auto-format = true
 
-[[language]]
-name = "git-commit"
-scope = "git.commitmsg"
-roots = []
-file-types = ["COMMIT_EDITMSG"]
-comment-token = "#"
-indent = { tab-width = 2, unit = "  " }
-rulers = [51, 73]
-text-width = 72
-language-servers = [ "ltex-ls" ]
-
 [language-server.pyright]
 command = "pyright-langserver"
 args = ["--stdio"]
@@ -50,3 +39,7 @@ language-servers = ["nil"]
 indent = { tab-width = 2, unit = "  " }
 auto-format = true
 formatter = { command = "alejandra", args = ["-q"] }
+
+[language-server.metals]
+command = "metals"
+config = { "isHttpEnabled" = true, metals = { inlayHints = { typeParameters = {enable = true} , hintsInPatternMatch = {enable = true}, implicitArguments = {enable = true}, implicitConversions = {enable = true} }  } } 
