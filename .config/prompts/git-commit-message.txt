@@ -1,0 +1,7 @@
+Write a short, single line commit messages summarising the changes in no more than 50 characters.
+If there are no changes, or the input is blank, return a blank string
+If the changes are only formatting, return "format"
+
+Think carefully before you write your commit message.
+
+What you write will be passed directly to git commit -m "[message]"

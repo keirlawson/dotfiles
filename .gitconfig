@@ -17,8 +17,8 @@
 	lg = log --pretty --graph --oneline --decorate
 	pu = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
 	df = diff --word-diff=color
-[credential]
-	helper = libsecret
+	cm = "!git diff --cached | llm prompt --no-stream -s \"$(cat ~/.config/prompts/git-commit-message.txt)\" | git commit -F - --edit"
+	cma = "!git diff | llm prompt --no-stream -s \"$(cat ~/.config/prompts/git-commit-message.txt)\" | git commit -F - --edit -a"
 [pull]
 	rebase = true
 [apply]
@@ -53,3 +53,5 @@
 
 [core]
     attributesfile = ~/.gitattributes
+[credential]
+	helper = libsecret
