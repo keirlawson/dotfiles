@@ -33,6 +33,22 @@ alias jca='git add . && jc'
 alias jpu='git pu && jp'
 alias cm='rm -fr .bsp .bloop project/metals.sbt project/project/metals.sbt .metals'
 alias ghc='gh p && gh pr view --json url,title --jq .title,.url | xargs -d '"'"'\n'"'"' sh -c \\'"'"'echo ":pull-request: $1 - $0"'"'"' | wl-copy'
+# select PR assignees, cached by repo
+alias pra='bkt --scope "$(git remote get-url origin)" --ttl 4week --stale 1week -- gh repo view --json assignableUsers -q '"'"'.assignableUsers[] | "\(.name) (\(.login))" '"'"
+alias prc='pra | sk -m | grep -Po "\(\K.*(?=\))" | paste -sd, -'
+alias apr='git pu && prc | xargs -I "{}" gh pr create --reviewer {} --fill'
+alias rg='rg --hidden'
+
+wt() {
+      local worktree_dir
+      worktree_dir=$(git-worktree-branch "$1")
+
+      if [ $? -eq 0 ] && [ -n "$worktree_dir" ]; then
+          cd "$worktree_dir" || return 1
+      else
+          return 1
+      fi
+  }
 
 # Load machine-specific configuration
 if [ -f ~/.zshlocal ]
