@@ -12,6 +12,7 @@
 	tool = meld
 [alias]
 	co = checkout
+	cb = "!git checkout $(git branch --sort=-committerdate | sk)"
 	br = branch --sort=-committerdate
 	fp = push --force-with-lease
 	lg = log --pretty --graph --oneline --decorate
@@ -19,6 +20,9 @@
 	df = diff --word-diff=color
 	cm = "!git diff --cached | llm prompt --no-stream -s \"$(cat ~/.config/prompts/git-commit-message.txt)\" | git commit -F - --edit"
 	cma = "!git diff | llm prompt --no-stream -s \"$(cat ~/.config/prompts/git-commit-message.txt)\" | git commit -F - --edit -a"
+	wt = "!f() { git worktree add "~/Code/$(basename `git rev-parse --show-toplevel`)$1" -b "$1"; }; f"
+	tb = "!git commit --allow-empty -m 'trigger build' && git push"
+	pm = fetch origin main:main
 [pull]
 	rebase = true
 [apply]
