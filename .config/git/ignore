@@ -8,3 +8,6 @@
 store/
 .envrc
 .direnv/
+.zed/
+
+**/.claude/settings.local.json
