@@ -57,5 +57,13 @@ then
 fi
 
 eval "$(starship init zsh)"
+export HOMEBREW_NO_ENV_HINTS=1
+
+# Check if GNU ls (has --color flag)
+if ls --color=auto &> /dev/null; then
+    alias ls='ls --color=auto'
+else
+    alias ls='ls -G'  # BSD ls (macOS default)
+fi
 
 # PATH variable should be set in .zshenv
