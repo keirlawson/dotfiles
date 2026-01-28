@@ -1,0 +1,6 @@
+toml-version = "v1.0.0"
+
+[lint]
+[lint.rules]
+dotted-keys-out-of-order = "off"
+tables-out-of-order   = "off"
