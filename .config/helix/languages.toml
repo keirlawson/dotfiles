@@ -6,6 +6,11 @@ command = "codebook-lsp"
 args = ["serve"]
 
 [[language]]
+name = "git-commit"
+file-types = [{ glob = "COMMIT_EDITMSG" }, { glob = "MERGE_MSG" }, { glob = "COMMIT_EDITMSG-*.txt" }]
+language-servers = [ "codebook" ]
+
+[[language]]
 name = "markdown"
 language-servers = [ "codebook", "marksman" ]
 formatter = { command = 'prettier', args = ["--parser", "markdown"] }
