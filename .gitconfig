@@ -11,8 +11,9 @@
 [merge]
 	tool = meld
 [alias]
+	nb = "!petname | xargs -I {} git co -b '{}'"
 	co = checkout
-	cb = "!git checkout $(git branch --sort=-committerdate | sk)"
+	cb = "!git checkout $(sk --color=light --ansi -c git-ebb | cut -f1 -w)"
 	br = branch --sort=-committerdate
 	fp = push --force-with-lease
 	lg = log --pretty --graph --oneline --decorate
